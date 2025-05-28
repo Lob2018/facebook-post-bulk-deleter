@@ -9,6 +9,7 @@ This JavaScript script (script.js file) allows Facebook users to bulk delete the
 - Option to specify the `aria-label` of the options menu and the position of the targeted post in the list of posts.
 - Manual stop option to halt the deletion process if needed.
 - Cleans the recycle bin and deletes photos associated with the posts.
+- The script runs by default for 5 minutes.
 
 ## Usage Instructions
 

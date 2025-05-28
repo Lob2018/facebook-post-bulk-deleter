@@ -16,11 +16,11 @@
     Commands to execute in the console:
     
     - To start the script for 5 minutes, specify:
-        - The `aria-label` of the options menu (e.g., "Options d’action" in France).
-        - The position of the item (e.g., 1 for the first post).
+        - The `aria-label` of the options menu (e.g., "Action options" in France).
+        - The position of the post (e.g., 1 for the first post).
         - Command: 
           ```javascript
-          startInterval("Options d’action", 1);
+          startInterval("Action options", 1);
           ```
 
     - To stop the script manually:
@@ -31,7 +31,7 @@
 
     Notes:
     - Please ensure to empty the Trash after running the script.
-    - Delete photos, which will also result in the deletion of associated posts.
+    - Deleting photos will also result in the deletion of associated posts.
     - Use this script responsibly and adhere to Facebook's terms of service.
 */
 
@@ -72,20 +72,20 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Main function to select an element and simulate key presses
-async function selectElementAndSimulateKeys(ariaLabel, position) {
-    // Select all elements with the specified aria-label
-    const elements = document.querySelectorAll(`div[aria-label="${ariaLabel}"]`);
-    console.log(elements);
+// Main function to select a post and simulate key presses
+async function selectPostAndSimulateKeys(ariaLabel, position) {
+    // Select all posts with the specified aria-label
+    const posts = document.querySelectorAll(`div[aria-label="${ariaLabel}"]`);
+    console.log(posts);
     
-    // Check if the element at the specified position exists
-    if (elements.length >= position) {
-        const element = elements[position - 1]; // Select the element at the given position
-        element.focus(); // Focus on the element
+    // Check if the post at the specified position exists
+    if (posts.length >= position) {
+        const post = posts[position - 1]; // Select the post at the given position
+        post.focus(); // Focus on the post
         console.log("Focus set on the post options with aria-label=" + ariaLabel);
         await simulateKeySequence(); // Simulate the key sequence
     } else {
-        console.log(`No element found with aria-label="${ariaLabel}" at position ${position}`);
+        console.log(`No post found with aria-label="${ariaLabel}" at position ${position}`);
     }
 }
 
@@ -93,7 +93,7 @@ async function selectElementAndSimulateKeys(ariaLabel, position) {
 function startInterval(ariaLabel, position) {
     // Start an interval that calls the selection function at regular intervals
     intervalId = setInterval(async () => {
-        await selectElementAndSimulateKeys(ariaLabel, position);
+        await selectPostAndSimulateKeys(ariaLabel, position);
     }, 600);
 
     // Stop the interval after 5 minutes (300000 ms)
