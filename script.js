@@ -16,11 +16,11 @@
     Commands to execute in the console:
     
     - To start the script for 5 minutes, specify:
-        - The `aria-label` of the options menu (e.g., "Action options" in France).
+        - The `aria-label` of the options menu (e.g., "Options d’action" in France).
         - The position of the post (e.g., 1 for the first post).
         - Command: 
           ```javascript
-          startInterval("Action options", 1);
+          startInterval("Options d’action", 1);
           ```
 
     - To stop the script manually:
