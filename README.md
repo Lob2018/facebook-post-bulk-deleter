@@ -14,7 +14,7 @@ This JavaScript script allows Facebook users to bulk delete their posts from the
 2. Navigate to the Activity Log and select "Posts."
 3. Open the browser console (CTRL+SHIFT+I).
 4. Paste the script into the console.
-5. Start the script by specifying the position of the element to delete (e.g., `startInterval(1)`).
+5. Start the script by specifying the position of the first element to delete (e.g., `startInterval(1)`).
 6. To stop the script manually, use `stopInterval()`.
 
 **Note:** Use this script with caution, as it will permanently delete your posts.
