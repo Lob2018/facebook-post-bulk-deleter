@@ -1,7 +1,7 @@
 # facebook-post-bulk-deleter
 
 **Description:**  
-This JavaScript script allows Facebook users to bulk delete their posts from their account. By automating the deletion process, this script makes it easy to manage post history, enabling users to quickly and efficiently clean up unwanted content. (Updated May 28, 2025)
+This JavaScript script (script.js file) allows Facebook users to bulk delete their posts from their account. By automating the deletion process, this script makes it easy to manage post history, enabling users to quickly and efficiently clean up unwanted content. (Updated May 28, 2025)
 
 ## Features
 
