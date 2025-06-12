@@ -1,4 +1,4 @@
-# 🚮 facebook-post-bulk-deleter (Updated May 28, 2025)
+# 🚮 facebook-post-bulk-deleter (updated May 28, 2025)
 
 **Description:**  
 This JavaScript script (to be pasted into the browser's developer console) allows Facebook users to mass delete their posts by automating the deletion process.
