@@ -20,7 +20,7 @@ This JavaScript script (to be pasted into the browser's developer console) allow
 5. To find the `aria-label` of the options menu:
    - Inspect the post you want to target by right-clicking on it and selecting "Inspect."
    - Look for the `aria-label` attribute in the HTML code of the post. It will look something like this: `aria-label="Options d’action"`.
-6. Paste the script into the console.
+6. Paste the copied code from the script.js file into the console.
 7. Start the script by specifying the `aria-label` of the options menu and the position of the first post to delete (e.g., `startInterval("Options d’action", 1)`).
 8. To stop the script manually, use `stopInterval()`.
 
