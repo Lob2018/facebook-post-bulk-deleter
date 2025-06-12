@@ -1,7 +1,7 @@
-# facebook-post-bulk-deleter
+# 🚮 facebook-post-bulk-deleter (Updated May 28, 2025)
 
 **Description:**  
-This JavaScript script (script.js file) allows Facebook users to bulk delete their posts from their account. By automating the deletion process, this script makes it easy to manage post history, enabling users to quickly and efficiently clean up unwanted content. (Updated May 28, 2025)
+This JavaScript script (to be pasted into the browser's developer console) allows Facebook users to mass delete their posts by automating the deletion process.
 
 ## Features
 
@@ -16,7 +16,7 @@ This JavaScript script (script.js file) allows Facebook users to bulk delete the
 1. Log in to your Facebook account.
 2. Navigate to the Activity Log and select "Posts and comments in groups."
 3. Click on "Posts" to view your posts.
-4. Open the browser console (CTRL+SHIFT+I).
+4. Open the browser console (Ctrl + Shift + I for Chrome, Edge, Firefox and Opera).
 5. To find the `aria-label` of the options menu:
    - Inspect the post you want to target by right-clicking on it and selecting "Inspect."
    - Look for the `aria-label` attribute in the HTML code of the post. It will look something like this: `aria-label="Options d’action"`.
